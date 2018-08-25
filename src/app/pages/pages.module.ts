@@ -17,6 +17,7 @@ import { PagesComponent } from './pages.component';
 //componentes personalizados
 import { ImcrementadorComponent } from '../components/imcrementador/imcrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 @NgModule({
   imports: [
@@ -31,15 +32,13 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
     Graficas1Component,
     ProgressComponent,
     ImcrementadorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccoutSettingsComponent
   ],
   exports: [
-    PagesComponent,
     DashboardComponent,
     Graficas1Component,
-    ProgressComponent,
-    ImcrementadorComponent,
-    GraficoDonaComponent
+    ProgressComponent
   ]
 })
 export class PagesModule { }
