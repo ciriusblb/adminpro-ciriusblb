@@ -61,6 +61,7 @@ export class RegisterComponent implements OnInit {
       swal('Importante','Debes aceptar las condiciones','warning');
       return;
     }
+    // ingresa estos datos al model de usuario
     let usuario = new Usuario(
       this.forma.value.nombre,
       this.forma.value.correo,
